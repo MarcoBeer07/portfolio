@@ -1,0 +1,56 @@
+.header {
+    background-color: black;
+}
+
+.menu {
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        cursor: pointer;
+        width: 60px;
+    }
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        padding-right: 30px;
+        font-weight: 700;
+        &:hover {
+            color: rgb(140, 255, 159);
+        }
+    }
+}
+
+.description {
+    padding-top: 50px;
+    padding-bottom: 180px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+        font-size: 100px;
+        color: white;
+    }
+    img {
+        align-items: center;
+        width: 450px;
+        border-radius: 100%;
+    }
+    button {
+        cursor: pointer;
+        background-color: black;
+        color: rgb(140, 255, 159);
+        width: 320px;
+        height: 80px;
+        font-size: 20px;
+        border-style: solid;
+        border-color: rgb(140, 255, 159);
+        border-width: 5px;
+    }
+}
