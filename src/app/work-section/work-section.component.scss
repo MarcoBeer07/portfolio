@@ -23,5 +23,21 @@
         &:hover {
             background-color: #fa2759;
         }
+        &:focus {
+            background-color: #fa2759;
+        }
     }
+}
+
+.my-works {
+    div {
+        width: 530px;
+        height: 300px;
+    }
+}
+
+.elpolloloco {
+    background-image: url('/assets/img/elpolloloco.png');
+    background-repeat: none;
+    background-size: cover;
 }
