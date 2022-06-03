@@ -1,0 +1,22 @@
+.contact-box {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    h1 {
+        font-size: 64px;
+        color: #2DFCD8;
+    }
+    input {
+        color: white;
+        font-weight: bold;
+        background-color: #1A1A1A;
+        outline: none;
+        border: none;
+        width: 500px;
+        height: 35px;
+    }
+}

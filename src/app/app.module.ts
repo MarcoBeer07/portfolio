@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SkillsSectionComponent,
-    WorkSectionComponent
+    WorkSectionComponent,
+    AboutSectionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

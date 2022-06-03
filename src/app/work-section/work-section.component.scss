@@ -50,7 +50,6 @@
 
 .elpolloloco:hover .show-work {
     display: flex;
-    width: ease-in 5000ms;
 }
 
 .join {
@@ -62,7 +61,6 @@
 
 .join:hover .show-work {
     display: flex;
-    width: ease-in 5000ms;
 }
 
 .quiz {
@@ -74,7 +72,6 @@
 
 .quiz:hover .show-work {
     display: flex;
-    width: ease-in 5000ms;
 }
 
 .beerando {
@@ -86,8 +83,6 @@
 
 .beerando:hover .show-work {
     display: flex;
-    width: 100%;
-    transition: width 2s;
 }
 
 .show-work {
