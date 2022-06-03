@@ -30,14 +30,91 @@
 }
 
 .my-works {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
     div {
         width: 530px;
         height: 300px;
+        margin: 20px;
     }
 }
 
 .elpolloloco {
+    position: relative;
     background-image: url('/assets/img/elpolloloco.png');
     background-repeat: none;
     background-size: cover;
+}
+
+.elpolloloco:hover .show-work {
+    display: flex;
+    width: ease-in 5000ms;
+}
+
+.join {
+    position: relative;
+    background-image: url('/assets/img/projects/join.PNG');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.join:hover .show-work {
+    display: flex;
+    width: ease-in 5000ms;
+}
+
+.quiz {
+    position: relative;
+    background-image: url('/assets/img/projects/quiz-app.PNG');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.quiz:hover .show-work {
+    display: flex;
+    width: ease-in 5000ms;
+}
+
+.beerando {
+    position: relative;
+    background-image: url('/assets/img/projects/beerando.PNG');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.beerando:hover .show-work {
+    display: flex;
+    width: 100%;
+    transition: width 2s;
+}
+
+.show-work {
+    display: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.733);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px!important;
+    h5 {
+        color: #fa2759;
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    button {
+        background-color: white;
+        color: #fa2759;
+        margin-top: 10px;
+        border-radius: 0px;
+        border-width: 1.5px;
+        width: 150px;
+        height: 60px;
+        &:hover {
+            color: white;
+        }
+    }
 }

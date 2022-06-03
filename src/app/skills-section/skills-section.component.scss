@@ -11,15 +11,13 @@
 
 .skills-boxes {
     display: flex;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-bottom: 80px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     div {
         position: relative;
-        margin-left: 50px !important;
-        margin-right: 50px !important;
         margin-top: 60px !important;
         display: flex;
         align-items: center;

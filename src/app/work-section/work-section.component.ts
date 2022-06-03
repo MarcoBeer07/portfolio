@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkSectionComponent implements OnInit {
 
+  changeText = false;
   constructor() { }
 
   ngOnInit(): void {
