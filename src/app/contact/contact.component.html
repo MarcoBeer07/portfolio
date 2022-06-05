@@ -1,4 +1,4 @@
-<div class="contact-box">
+<div id="contactBox" class="contact-box">
     <div>
         <div>
             <h1>Contact me.</h1>
@@ -21,5 +21,14 @@
             <p>Message</p>
             <input placeholder="Enter your message" type="text">
         </div>
+
+        <button (click)="showSubmitFeedback = true">Send</button>
+    </div>
+
+    <div *ngIf="showSubmitFeedback" id="submitFeedback" class="submit-feedback">
+        <img (click)="showSubmitFeedback = false " src="/assets/img/x_white.png" alt="">
+        <h1>Nachricht wurde gesendet</h1>
+        <h3>Vielen Dank !</h3>
+
     </div>
 </div>

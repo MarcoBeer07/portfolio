@@ -1,4 +1,5 @@
 .my-work-box {
+    min-height: 100vh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -43,7 +44,7 @@
 
 .elpolloloco {
     position: relative;
-    background-image: url('/assets/img/elpolloloco.png');
+    background-image: url('/assets/img/projects/elpolloloco-pc.png');
     background-repeat: none;
     background-size: cover;
 }
@@ -54,7 +55,7 @@
 
 .join {
     position: relative;
-    background-image: url('/assets/img/projects/join.PNG');
+    background-image: url('/assets/img/projects/Join-pc.jpg');
     background-repeat: none;
     background-size: cover;
 }
@@ -65,7 +66,7 @@
 
 .quiz {
     position: relative;
-    background-image: url('/assets/img/projects/quiz-app.PNG');
+    background-image: url('/assets/img/projects/quizapp-pc.png');
     background-repeat: none;
     background-size: cover;
 }
@@ -76,9 +77,9 @@
 
 .beerando {
     position: relative;
-    background-image: url('/assets/img/projects/beerando.PNG');
+    background-image: url('/assets/img/projects/beerando-pc.png');
     background-repeat: none;
-    background-size: cover;
+    background-size: contain;
 }
 
 .beerando:hover .show-work {

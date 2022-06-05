@@ -19,4 +19,54 @@
         width: 500px;
         height: 35px;
     }
+    button {
+        float: right;
+        margin-top: 35px;
+        cursor: pointer;
+        background-color: black;
+        color: #2DFCD8;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        border-style: solid;
+        border-color: #2DFCD8;
+        border-width: 2px;
+        &:hover {
+            background-color: #2DFCD8;
+            color: white;
+            transform: scale(1.1);
+            transition: 225ms ease-in-out;
+            background-position: 0 100%;
+            cursor: pointer;
+        }
+    }
+    .submit-feedback {
+        position: relative;
+        position: fixed;
+        padding: 20px;
+        background-color: black;
+        text-align: center;
+        top: 50%;
+        border-radius: 10px;
+        border-color: #2DFCD8;
+        border-width: 5px;
+        border-style: solid;
+        height: 500px;
+        width: 500px;
+        img {
+            cursor: pointer;
+            position: absolute;
+            left: 20px;
+            width: 20px;
+        }
+        animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            top: 100%;
+        }
+        to {
+            top: 50%;
+        }
+    }
 }
