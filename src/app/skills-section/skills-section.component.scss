@@ -18,6 +18,7 @@
     justify-content: space-between;
     div {
         position: relative;
+        flex: 2 0 30%;
         margin-top: 60px !important;
         display: flex;
         align-items: center;
@@ -29,7 +30,6 @@
         border-radius: 8px;
         font-size: 18px;
     }
-    animation: fadeIn 3s ease;
 }
 
 .skills-img-box {
@@ -46,14 +46,5 @@
     img {
         width: 40px;
         height: 40px;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        height: 300px;
-    }
-    to {
-        height: 150px;
     }
 }

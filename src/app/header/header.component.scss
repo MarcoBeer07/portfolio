@@ -11,7 +11,8 @@
     width: 100%;
     z-index: -1;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/img/backgrounds/laptop-background.jpg');
-    animation: zoomInAndOut 12s ease-in infinite;
+    background-size: cover;
+    animation: zoomInAndOut 15s ease-in infinite;
     animation-direction: alternate;
 }
 
@@ -82,7 +83,7 @@
         &:hover {
             background-color: #2DFCD8;
             color: white;
-            transform: scale(1.1);
+            transform: scale(1.02);
             transition: 225ms ease-in-out;
             background-position: 0 100%;
             cursor: pointer;

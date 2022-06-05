@@ -8,6 +8,7 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactComponent } from './contact/contact.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     SkillsSectionComponent,
     WorkSectionComponent,
     AboutSectionComponent,
-    ContactComponent
+    ContactComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,

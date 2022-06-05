@@ -86,6 +86,17 @@
     display: flex;
 }
 
+.pokedex {
+    position: relative;
+    background-image: url('/assets/img/projects/pokedex-pc.png');
+    background-repeat: none;
+    background-size: contain;
+}
+
+.pokedex:hover .show-work {
+    display: flex;
+}
+
 .show-work {
     display: none;
     position: relative;
