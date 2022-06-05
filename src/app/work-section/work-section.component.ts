@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as AOS from 'aos';
+import 'aos/dist/aos.css';
 @Component({
   selector: 'app-work-section',
   templateUrl: './work-section.component.html',
@@ -11,6 +12,8 @@ export class WorkSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
+
   }
 
 }

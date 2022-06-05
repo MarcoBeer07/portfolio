@@ -1,28 +1,28 @@
 <div id="contactBox" class="contact-box">
     <div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
             <h1>Contact me.</h1>
         </div>
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1000">
             <p>Get in touch via the form below, or by emailing marco.beer93@web.de</p>
         </div>
 
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
             <p>Name</p>
             <input placeholder="Enter your name" type="name">
         </div>
 
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1000">
             <p>Email address</p>
             <input placeholder="Enter your Email address" type="email">
         </div>
 
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
             <p>Message</p>
             <input placeholder="Enter your message" type="text">
         </div>
 
-        <button (click)="showSubmitFeedback = true">Send</button>
+        <button data-aos="fade-right" data-aos-duration="1000" (click)="showSubmitFeedback = true">Send</button>
     </div>
 
     <div *ngIf="showSubmitFeedback" id="submitFeedback" class="submit-feedback">

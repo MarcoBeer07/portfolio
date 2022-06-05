@@ -1,9 +1,27 @@
 .header {
-    background-color: black;
-    background-image: url('/assets/img/backgrounds/laptop-background.jpg');
-    background-color: black;
-    background-size: cover;
+    position: relative;
+    z-index: 1;
     height: 100vh;
+    overflow: hidden;
+}
+
+.header-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/img/backgrounds/laptop-background.jpg');
+    animation: zoomInAndOut 12s ease-in infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zoomInAndOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
 
 .navbar {
