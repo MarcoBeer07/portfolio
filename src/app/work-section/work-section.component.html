@@ -1,52 +1,52 @@
 <div id="myWorkBox" class="my-work-box">
     <h2 data-aos="fade-down" data-aos-duration="1000">My Work</h2>
     <div>
-        <button data-aos="flip-right" data-aos-duration="1000">All</button>
-        <button data-aos="flip-right" data-aos-duration="1000">Angular</button>
-        <button data-aos="flip-right" data-aos-duration="1000">Javascript</button>
+        <button (click)="javaScript = true; angular = true" data-aos="flip-right" data-aos-duration="1000">All</button>
+        <button (click)="angular = true; javaScript = false" data-aos="flip-right" data-aos-duration="1000">Angular</button>
+        <button (click)="javaScript = true; angular = false" data-aos="flip-right" data-aos-duration="1000">Javascript</button>
     </div>
 
     <div class="my-works">
-        <div data-aos="zoom-in" data-aos-duration="1000" class="elpolloloco">
+        <div *ngIf="javaScript" data-aos="zoom-in" data-aos-duration="1000" class="elpolloloco">
             <div class="show-work">
                 <h5>El Pollo Loco</h5>
                 <p>JavaScript - based jump and run game.</p>
                 <a href="https://marco-beer.developerakademie.net/ElPolloLoco/index.html" target="_blank"><button>Try out</button></a>
             </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" class="join">
+        <div *ngIf="javaScript" data-aos="zoom-in" data-aos-duration="1000" class="join">
             <div class="show-work">
                 <h5>Join</h5>
                 <p>JavaScript - based canban board.</p>
                 <a href="https://gruppe-228.developerakademie.net/join/index.html" target="_blank"><button>Try out</button></a>
             </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" class="quiz">
+        <div *ngIf="javaScript" data-aos="zoom-in" data-aos-duration="1000" class="quiz">
             <div class="show-work">
                 <h5>Quiz App</h5>
                 <p>JavaScript - based quiz.</p>
                 <a href="https://marco-beer.developerakademie.net/Quiz%20App/index.html" target="_blank"><button>Try out</button></a>
             </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" class="beerando">
+        <div *ngIf="javaScript" data-aos="zoom-in" data-aos-duration="1000" class="beerando">
             <div class="show-work">
                 <h5>Beerando</h5>
                 <p>Food delivery site - based on Lieferando.</p>
                 <a href="https://marco-beer.developerakademie.net/Lieferando/index.html" target="_blank"><button>Try out</button></a>
             </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" class="pokedex">
+        <div *ngIf="javaScript" data-aos="zoom-in" data-aos-duration="1000" class="pokedex">
             <div class="show-work">
                 <h5>Pokedex</h5>
                 <p>API based pokedex</p>
                 <a href="https://marco-beer.developerakademie.net/Pokedex/index.html" target="_blank"><button>Try out</button></a>
             </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" class="portfolio">
+        <div *ngIf="angular" data-aos="zoom-in" data-aos-duration="1000" class="portfolio">
             <div class="show-work">
                 <h5>Portfolio</h5>
                 <p>My Portfolio built with Angular</p>
-                <a href="https://marco-beer.developerakademie.net/Pokedex/index.html" target="_blank"><button>Try out</button></a>
+                <a href="" target="_blank"><button>Try out</button></a>
             </div>
         </div>
     </div>

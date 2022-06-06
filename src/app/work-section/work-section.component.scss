@@ -1,9 +1,10 @@
 .my-work-box {
-    min-height: 100vh;
+    overflow: hidden;
     background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 80px;
     h2 {
         color: white;
         font-size: 36px;
@@ -31,6 +32,7 @@
 }
 
 .my-works {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -44,7 +46,7 @@
 
 .elpolloloco {
     position: relative;
-    background-image: url('/assets/img/projects/elpolloloco-pc.png');
+    background-image: url('../../assets/img/projects/elpolloloco-pc.png');
     background-repeat: none;
     background-size: cover;
 }
@@ -55,7 +57,7 @@
 
 .join {
     position: relative;
-    background-image: url('/assets/img/projects/Join-pc.jpg');
+    background-image: url('../../assets/img/projects/Join-pc.jpg');
     background-repeat: none;
     background-size: cover;
 }
@@ -66,7 +68,7 @@
 
 .quiz {
     position: relative;
-    background-image: url('/assets/img/projects/quizapp-pc.png');
+    background-image: url('../../assets/img/projects/quizapp-pc.png');
     background-repeat: none;
     background-size: cover;
 }
@@ -77,7 +79,7 @@
 
 .beerando {
     position: relative;
-    background-image: url('/assets/img/projects/beerando-pc.png');
+    background-image: url('../../assets/img/projects/beerando-pc.png');
     background-repeat: none;
     background-size: contain;
 }
@@ -88,7 +90,7 @@
 
 .pokedex {
     position: relative;
-    background-image: url('/assets/img/projects/pokedex-pc.png');
+    background-image: url('../../assets/img/projects/pokedex-pc.png');
     background-repeat: none;
     background-size: contain;
 }
@@ -99,7 +101,7 @@
 
 .portfolio {
     position: relative;
-    background-image: url('/assets/img/projects/portfolio-pc.png');
+    background-image: url('../../assets/img/projects/portfolio-pc.png');
     background-repeat: none;
     background-size: cover;
 }
@@ -133,6 +135,60 @@
         height: 60px;
         &:hover {
             color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .my-work-box {
+        background-color: #1A1A1A;
+        align-items: center;
+        padding-bottom: 20px;
+        button {
+            cursor: pointer;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 100px;
+            height: 45px;
+            background-color: #1A1A1A;
+            font-size: 15px;
+        }
+    }
+    .my-works {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+        flex-wrap: wrap;
+        div {
+            width: 100%;
+            height: 180px;
+            margin: 20px;
+        }
+    }
+    .show-work {
+        display: none;
+        position: relative;
+        text-align: center;
+        h5 {
+            color: #fa2759;
+            font-size: 18px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            background-color: white;
+            margin-top: 0px;
+            width: 130px;
+            height: 50px;
+            &:hover {
+                color: white;
+            }
         }
     }
 }

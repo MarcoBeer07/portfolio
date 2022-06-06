@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  showSubmitFeedback = false!
+  showSubmitFeedback = false;
 
   constructor() {
 
@@ -17,6 +17,8 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
     AOS.init();
   }
+
+
 
 
 

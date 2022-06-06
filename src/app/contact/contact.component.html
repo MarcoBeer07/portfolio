@@ -1,29 +1,25 @@
 <div id="contactBox" class="contact-box">
-    <div>
-        <div data-aos="fade-left" data-aos-duration="1000">
-            <h1>Contact me.</h1>
-        </div>
-        <div data-aos="fade-right" data-aos-duration="1000">
-            <p>Get in touch via the form below, or by emailing marco.beer93@web.de</p>
-        </div>
-
-        <div data-aos="fade-left" data-aos-duration="1000">
-            <p>Name</p>
-            <input placeholder="Enter your name" type="name">
-        </div>
-
-        <div data-aos="fade-right" data-aos-duration="1000">
-            <p>Email address</p>
-            <input placeholder="Enter your Email address" type="email">
-        </div>
-
-        <div data-aos="fade-left" data-aos-duration="1000">
-            <p>Message</p>
-            <input placeholder="Enter your message" type="text">
-        </div>
-
-        <button data-aos="fade-right" data-aos-duration="1000" (click)="showSubmitFeedback = true">Send</button>
+    <div data-aos="fade-left" data-aos-duration="1000">
+        <h1>Contact me.</h1>
     </div>
+    <div data-aos="fade-right" data-aos-duration="1000">
+        <p>Get in touch via the form below, or by emailing marco.beer93@web.de</p>
+    </div>
+    <form class="contact-form" action="https://formspree.io/f/xlezveqj" method="POST">
+        <label data-aos="fade-right" data-aos-duration="1000">
+        <span>Name</span>
+            <input type="text" name="text" placeholder="Name" #name required>
+          </label>
+        <label data-aos="fade-left" data-aos-duration="1000">
+        <span>Email</span>
+            <input type="email" name="email" placeholder="E-Mail" #email required>
+        </label>
+        <label data-aos="fade-right" data-aos-duration="1000">
+        <span>Message</span>
+            <textarea name="message" placeholder="Message" #message required></textarea>
+        </label>
+        <button data-aos="fade-left" data-aos-duration="1000" type="submit">Send</button>
+    </form>
 
     <div *ngIf="showSubmitFeedback" id="submitFeedback" class="submit-feedback">
         <img (click)="showSubmitFeedback = false " src="/assets/img/x_white.png" alt="">
@@ -32,3 +28,29 @@
 
     </div>
 </div>
+
+<!--<div>
+    <div data-aos="fade-left" data-aos-duration="1000">
+        <h1>Contact me.</h1>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1000">
+        <p>Get in touch via the form below, or by emailing marco.beer93@web.de</p>
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="1000">
+        <p>Name</p>
+        <input placeholder="Enter your name" type="name">
+    </div>
+
+    <div data-aos="fade-right" data-aos-duration="1000">
+        <p>Email address</p>
+        <input placeholder="Enter your Email address" type="email">
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="1000">
+        <p>Message</p>
+        <input placeholder="Enter your message" type="text">
+    </div>
+
+    <button data-aos="fade-right" data-aos-duration="1000" (click)="showSubmitFeedback = true">Send</button>
+</div>-->

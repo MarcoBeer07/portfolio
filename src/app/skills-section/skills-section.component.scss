@@ -1,4 +1,5 @@
 .skills-section {
+    overflow: hidden;
     background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
@@ -45,5 +46,42 @@
     img {
         width: 40px;
         height: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skills-section {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+    .skills-boxes {
+        padding: 0px;
+        flex-wrap: wrap;
+        div {
+            position: relative;
+            margin-top: 60px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30%;
+            height: 100px;
+            margin: 5px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    .skills-img-box {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        img {
+            width: 25px;
+            height: 25px;
+        }
     }
 }

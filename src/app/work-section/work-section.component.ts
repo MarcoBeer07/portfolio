@@ -7,12 +7,17 @@ import 'aos/dist/aos.css';
   styleUrls: ['./work-section.component.scss']
 })
 export class WorkSectionComponent implements OnInit {
-
+  javaScript = true;
+  angular = true;
   changeText = false;
-  constructor() { }
+  projectBackgrounds = ['/assets/img/projects/elpolloloco-pc.png', '/assets/img/projects/Join-pc.jpg', '/assets/img/projects/quizapp-pc.png', '/assets/img/projects/beerando-pc.png', '/assets/img/projects/pokedex-pc.png', '/assets/img/projects/portfolio-pc.png']
+
+  constructor() {
+  }
 
   ngOnInit(): void {
     AOS.init();
+    this.projectBackgrounds;
 
   }
 
