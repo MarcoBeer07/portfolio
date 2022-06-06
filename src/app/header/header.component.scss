@@ -53,6 +53,10 @@
     }
 }
 
+.mobile-navbar {
+    display: none;
+}
+
 .description {
     padding-top: 200px;
     padding-left: 200px;
@@ -88,5 +92,74 @@
             background-position: 0 100%;
             cursor: pointer;
         }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0px;
+    }
+    .header-background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/img/backgrounds/laptop-background.jpg');
+        background-size: cover;
+        background-position: 50%;
+        animation: zoomInAndOut 15s ease-in infinite;
+        animation-direction: alternate;
+    }
+    .navbar {
+        display: none;
+        img {
+            display: flex;
+            cursor: pointer;
+            width: 60px;
+        }
+    }
+    .mobile-navbar {
+        display: flex;
+        background-color: black;
+        height: 50px;
+        img {
+            margin-left: 10px;
+            width: 50px;
+            object-fit: contain;
+        }
+    }
+    .description {
+        padding: 0px;
+        flex-direction: column-reverse;
+        h1 {
+            font-size: 28px;
+            line-height: 40px;
+            color: white;
+        }
+        img {
+            margin-top: 35px;
+            align-items: center;
+            width: 160px;
+            border-radius: 100%;
+        }
+        button {
+            margin-top: 50px;
+            width: 280px;
+            height: 80px;
+            font-size: 16px;
+            border-style: solid;
+            border-color: #2DFCD8;
+            border-width: 5px;
+        }
+    }
+    .menu-burger {
+        position: absolute;
+        right: 10px;
+        top: 12.5px;
+        width: 25px !important;
     }
 }

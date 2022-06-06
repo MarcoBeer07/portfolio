@@ -97,6 +97,17 @@
     display: flex;
 }
 
+.portfolio {
+    position: relative;
+    background-image: url('/assets/img/projects/portfolio-pc.png');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.portfolio:hover .show-work {
+    display: flex;
+}
+
 .show-work {
     display: none;
     position: relative;
