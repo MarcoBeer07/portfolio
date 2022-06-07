@@ -9,6 +9,9 @@ import { WorkSectionComponent } from './work-section/work-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ImprintComponent } from './imprint/imprint.component';
     WorkSectionComponent,
     AboutSectionComponent,
     ContactComponent,
-    ImprintComponent
+    ImprintComponent,
+    NavbarComponent,
+    FooterComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,

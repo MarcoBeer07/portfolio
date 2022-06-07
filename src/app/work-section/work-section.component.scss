@@ -35,7 +35,11 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
     margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     flex-wrap: wrap;
     div {
         width: 530px;

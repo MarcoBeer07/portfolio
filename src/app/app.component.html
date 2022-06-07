@@ -1,5 +1,17 @@
-<app-header></app-header>
-<app-skills-section></app-skills-section>
-<app-work-section></app-work-section>
-<app-about-section></app-about-section>
-<app-contact></app-contact>
+<app-navbar></app-navbar>
+
+<div *ngIf="router.url == '/' || router.url == '/#skills' || router.url == '/#work' || router.url == '/#about'|| router.url == '/#contact'">
+    <app-header></app-header>
+    <app-skills-section></app-skills-section>
+    <app-work-section></app-work-section>
+    <app-about-section></app-about-section>
+    <app-contact></app-contact>
+</div>
+<div *ngIf="router.url == '/imprint'">
+    <app-imprint></app-imprint>
+</div>
+<div *ngIf="router.url == '/data-protection'">
+    <app-data-protection></app-data-protection>
+</div>
+
+<app-footer *ngIf="router.url == '/' || router.url == '/#skills' || router.url == '/#work' || router.url == '/#about'|| router.url == '/imprint' "></app-footer>

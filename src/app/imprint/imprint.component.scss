@@ -1,0 +1,32 @@
+.impressum {
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.impressum-content {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    font-size: 20px;
+    text-align: center;
+    a {
+        color: white;
+    }
+}
+
+.header-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../assets/img/backgrounds/laptop-background.jpg');
+    background-size: cover;
+    animation: zoomInAndOut 15s ease-in infinite;
+    animation-direction: alternate;
+}
