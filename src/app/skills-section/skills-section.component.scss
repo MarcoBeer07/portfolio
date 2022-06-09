@@ -49,6 +49,42 @@
     }
 }
 
+@media only screen and (max-width: 1270px) {
+    .skills-section {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+    .skills-boxes {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .skills-boxes {
+        div {
+            margin-top: 60px !important;
+            display: flex;
+            width: 28%;
+            height: 100px;
+            margin: 5px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    .skills-img-box {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .skills-section {
         padding-left: 10px;

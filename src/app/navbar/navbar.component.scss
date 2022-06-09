@@ -30,3 +30,25 @@
         }
     }
 }
+
+@media only screen and (max-width: 1270px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar {
+        display: none;
+    }
+}

@@ -143,6 +143,22 @@
     }
 }
 
+@media only screen and (max-width: 1600px) {
+    .my-works {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .my-work-box {
+        button {
+            width: 150px;
+            height: 60px;
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .my-work-box {
         background-color: #1A1A1A;
