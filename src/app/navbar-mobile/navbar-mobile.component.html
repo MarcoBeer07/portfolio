@@ -5,10 +5,10 @@
     <div *ngIf="mobileMenu" class="mobile-links">
         <div>
             <a href="#home">HOME</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#work">PORTFOLIO</a>
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
+            <a *ngIf="router.url != '/imprint' && router.url != '/data-protection'" href="#skills">SKILLS</a>
+            <a *ngIf="router.url != '/imprint' && router.url != '/data-protection'" href="#work">PORTFOLIO</a>
+            <a *ngIf="router.url != '/imprint' && router.url != '/data-protection'" href="#about">ABOUT</a>
+            <a *ngIf="router.url != '/imprint' && router.url != '/data-protection'" href="#contact">CONTACT</a>
         </div>
     </div>
 </div>
