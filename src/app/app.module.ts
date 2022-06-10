@@ -12,6 +12,8 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { NavbarMobileComponent } from './navbar-mobile/navbar-mobile.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     ImprintComponent,
     NavbarComponent,
     FooterComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    NavbarMobileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

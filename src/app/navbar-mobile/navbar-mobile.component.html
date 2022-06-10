@@ -1,0 +1,14 @@
+<div class="mobile-navbar">
+    <a href="#home"><img src="./assets/img/logo_white.png" alt=""></a>
+    <img id="mobMenu" (click)="mobileMenu = true" class="menu-burger" *ngIf="!mobileMenu" src="./assets/img/menu-4-64.png" alt="">
+    <img id="mobMenu" (click)="mobileMenu = false" class="menu-burger" *ngIf="mobileMenu" src="./assets/img/x_white.png" alt="">
+    <div *ngIf="mobileMenu" class="mobile-links">
+        <div>
+            <a href="#home">HOME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#work">PORTFOLIO</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+</div>

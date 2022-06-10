@@ -1,23 +1,82 @@
-.data-protection {
-    color: white;
-    background-color: #1A1A1A;
-    z-index: 1;
-    height: 320vh;
-}
-
-.data-protection-content {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 20px;
-    right: 0;
-    top: 200px;
-    height: 100%;
-    font-size: 20px;
-    text-align: center;
-    max-width: 1200px;
-    height: 100%;
-    a {
+    .data-protection {
         color: white;
+        background-color: #1A1A1A;
+        z-index: 1;
+        height: 350vh;
     }
-}
+    
+    .data-protection-content {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 20px;
+        right: 0;
+        top: 200px;
+        font-size: 20px;
+        text-align: center;
+        max-width: 1200px;
+        height: 100%;
+        a {
+            color: white;
+        }
+    }
+    
+    @media only screen and (max-width: 1800px) {
+        .data-protection {
+            height: 400vh;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .data-protection {
+            height: 450vh;
+        }
+    }
+    
+    @media only screen and (max-width: 830px) {
+        .data-protection {
+            height: 500vh;
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+        .data-protection {
+            height: 550vh;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .data-protection {
+            height: 630vh;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .data-protection-content {
+            font-size: 14px;
+            h1 {
+                font-size: 30px;
+            }
+        }
+        .data-protection {
+            height: 420vh;
+        }
+    }
+    
+    @media only screen and (max-width: 420px) {
+        .data-protection {
+            height: 360vh;
+        }
+        .data-protection-content {
+            font-size: 12px;
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 360px) {
+        .data-protection {
+            height: 500vh;
+        }
+    }

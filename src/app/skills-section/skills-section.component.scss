@@ -121,3 +121,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 350px) {
+    .skills-boxes {
+        div {
+            position: relative;
+            margin-top: 60px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 28%;
+            height: 100px;
+            margin: 5px;
+            font-size: 15px;
+            text-align: center;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

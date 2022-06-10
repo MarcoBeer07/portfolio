@@ -29,10 +29,6 @@
     }
 }
 
-.mobile-navbar {
-    display: none;
-}
-
 .description {
     padding-top: 300px;
     padding-left: 200px;
@@ -116,41 +112,6 @@
     .header-background {
         background-color: #1A1A1A
     }
-    .mobile-navbar {
-        position: relative;
-        position: fixed;
-        display: flex;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-        img {
-            cursor: pointer;
-            margin-left: 10px;
-            width: 50px;
-            object-fit: contain;
-        }
-    }
-    .menu-burger {
-        cursor: pointer;
-        position: absolute;
-        right: 10px;
-        top: 12.5px;
-        width: 25px !important;
-    }
-    .mobile-links {
-        cursor: pointer;
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        display: flex;
-        a {
-            padding-left: 8px;
-            text-decoration: none;
-            color: white;
-            font-size: 15px;
-            font-weight: bold;
-        }
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -185,21 +146,9 @@
             width: 60px;
         }
     }
-    .mobile-navbar {
-        position: relative;
-        position: fixed;
-        display: flex;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-        img {
-            margin-left: 10px;
-            width: 50px;
-            object-fit: contain;
-        }
-    }
     .description {
         padding: 0px;
+        padding-top: 20px !important;
         flex-direction: column-reverse;
         h1 {
             font-size: 28px;
@@ -223,23 +172,43 @@
             border-width: 5px;
         }
     }
-    .menu-burger {
-        position: absolute;
-        right: 10px;
-        top: 12.5px;
-        width: 25px !important;
-    }
-    .mobile-links {
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        display: flex;
-        a {
-            padding-left: 8px;
-            text-decoration: none;
+}
+
+@media only screen and (max-width: 350px) {
+    .description {
+        padding: 0px;
+        padding-top: 20px !important;
+        flex-direction: column-reverse;
+        h1 {
+            font-size: 25px;
+            line-height: 40px;
             color: white;
-            font-size: 15px;
-            font-weight: bold;
         }
+        img {
+            margin-top: 100px;
+            align-items: center;
+            width: 160px;
+            border-radius: 100%;
+        }
+        button {
+            margin-top: 50px;
+            width: 250px;
+            height: 70px;
+            font-size: 16px;
+            background-color: #1A1A1A;
+            border-style: solid;
+            border-color: #2DFCD8;
+            border-width: 5px;
+        }
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .header-background {
+        background-color: #1A1A1A;
+        background-image: unset;
+    }
+    .description {
+        padding-top: 150px;
     }
 }
