@@ -51,4 +51,14 @@
             object-fit: contain;
         }
     }
+    .impressum-content {
+        top: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .impressum-content {
+        top: 70px;
+        font-size: 16px;
+    }
 }

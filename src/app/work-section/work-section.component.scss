@@ -70,14 +70,15 @@
     display: flex;
 }
 
-.quiz {
+.ringoffire {
     position: relative;
-    background-image: url('../../assets/img/projects/quizapp-pc.png');
+    background-image: url('../../assets/img/projects/ringoffire-pc.png');
     background-repeat: none;
+    background-position: center;
     background-size: cover;
 }
 
-.quiz:hover .show-work {
+.ringoffire:hover .show-work {
     display: flex;
 }
 
@@ -85,7 +86,8 @@
     position: relative;
     background-image: url('../../assets/img/projects/beerando-pc.png');
     background-repeat: none;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
 }
 
 .beerando:hover .show-work {
