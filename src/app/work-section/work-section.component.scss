@@ -143,6 +143,16 @@
             color: white;
         }
     }
+    animation: zoom-out 350ms ease;
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 @media only screen and (max-width: 1600px) {

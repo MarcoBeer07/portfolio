@@ -88,7 +88,7 @@
             color: white;
         }
         img {
-            margin-top: 70px;
+            margin-top: 0px;
             align-items: center;
             width: 250px;
             border-radius: 100%;
@@ -107,6 +107,9 @@
 }
 
 @media only screen and (max-width: 850px) {
+    .description {
+        padding-top: 0px;
+    }
     .header-background {
         background-color: #1A1A1A
     }
