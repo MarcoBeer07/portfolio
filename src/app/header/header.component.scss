@@ -114,9 +114,6 @@
     .description {
         padding-top: 0px;
     }
-    .header-background {
-        background-color: #1A1A1A
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -137,7 +134,6 @@
         background-size: cover;
         background-image: unset;
         background-color: #1A1A1A;
-        background-position: 50%;
         animation: unset;
         animation-direction: unset;
     }
@@ -150,6 +146,7 @@
         }
     }
     .description {
+        background-color: #1A1A1A;
         padding: 0px;
         padding-bottom: 40px;
         padding-top: 20px !important;
@@ -205,6 +202,16 @@
             border-color: #2DFCD8;
             border-width: 5px;
         }
+    }
+    .header-background {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-image: unset;
+        background-color: #1A1A1A;
+        animation: unset;
+        animation-direction: unset;
     }
 }
 

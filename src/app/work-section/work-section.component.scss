@@ -201,9 +201,11 @@
         }
     }
     .show-work {
-        display: none;
         position: relative;
+        display: flex;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.575);
+        animation: unset;
         h5 {
             color: #fa2759;
             font-size: 18px;
@@ -212,6 +214,7 @@
         }
         p {
             font-size: 18px;
+            color: rgb(0, 0, 0);
         }
         button {
             background-color: white;

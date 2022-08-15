@@ -17,7 +17,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 200px;
+    top: 130px;
     font-size: 20px;
     text-align: center;
     a {
@@ -32,6 +32,7 @@
     z-index: -1;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../assets/img/backgrounds/laptop-background.jpg');
     background-size: cover;
+    background-position: center;
     animation: zoomInAndOut 15s ease-in infinite;
     animation-direction: alternate;
 }
@@ -60,5 +61,25 @@
     .impressum-content {
         top: 70px;
         font-size: 16px;
+    }
+    .header {
+        position: relative;
+        height: unset;
+        z-index: 1;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0px;
+        align-items: unset;
+        display: unset;
+    }
+    .header-background {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-image: unset;
+        background-color: #1A1A1A;
+        animation: unset;
+        animation-direction: unset;
     }
 }
